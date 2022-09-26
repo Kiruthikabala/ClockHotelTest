@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Kiruthika.B/IdeaProjects/SeleniumAssesment">
         <classes>
-            <class name="BookingTest">
+            <class name="org.qualitest.pages.BookingTest">
             <methods><include name="booking"/></methods>
         </class></classes>
     </test>
