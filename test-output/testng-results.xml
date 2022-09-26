@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-26T18:49:54 BST" name="Default Suite" finished-at="2022-09-26T18:52:40 BST" duration-ms="166586">
+    <groups>
+    </groups>
+    <test started-at="2022-09-26T18:49:54 BST" name="SeleniumAssesment" finished-at="2022-09-26T18:52:40 BST" duration-ms="166586">
+      <class name="org.qualitest.pages.BookingTest">
+        <test-method is-config="true" signature="InitializeBrowser()[pri:0, instance:org.qualitest.pages.BookingTest@e7edb54]" started-at="2022-09-26T18:49:54 BST" name="InitializeBrowser" finished-at="2022-09-26T18:50:22 BST" duration-ms="28753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeBrowser -->
+        <test-method signature="booking()[pri:0, instance:org.qualitest.pages.BookingTest@e7edb54]" started-at="2022-09-26T18:50:22 BST" name="booking" finished-at="2022-09-26T18:52:39 BST" duration-ms="136852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- booking -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:org.qualitest.pages.BookingTest@e7edb54]" started-at="2022-09-26T18:52:39 BST" name="CloseBrowser" finished-at="2022-09-26T18:52:40 BST" duration-ms="918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- org.qualitest.pages.BookingTest -->
+    </test> <!-- SeleniumAssesment -->
+  </suite> <!-- Default Suite -->
+</testng-results>
