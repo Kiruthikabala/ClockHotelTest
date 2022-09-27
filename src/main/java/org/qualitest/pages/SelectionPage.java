@@ -93,7 +93,7 @@ public class SelectionPage extends PageBase {
                 } while (driver.findElements(_AvailableDate).isEmpty());
                 click(_AvailableDate);
             }
-            dateString = availableDate.split("\\n")[0] + " 2022";
+            dateString = availableDate.split("\\n")[0] + " 2023";
             DateFormat OldFormat = new SimpleDateFormat("dd MMM yyyy");
             Date _oldFormat = OldFormat.parse(dateString);
             DateFormat _dateString = new SimpleDateFormat("dd-MMM-yyyy");
