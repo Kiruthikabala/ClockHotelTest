@@ -43,7 +43,6 @@ public class SelectionPage extends PageBase {
         for (int i = 0; i < checkAvailability().size(); i++) {
             roomType.add(checkAvailability().get(i).getText());
         }
-
         if (!roomType.contains("Deluxe Appartment")) {
             click(checkAvailabilityCalender);
             int availableCount = 0;
@@ -54,7 +53,7 @@ public class SelectionPage extends PageBase {
                     availability.add(availabilityS().get(m).getText());
                 }
                 int i = 1;
-                while (i < availabilityS().size()) {
+                while (i <= availabilityS().size()) {
                     WebElement find = driver.findElement(By.xpath("//h4[contains(text(),\"Delux\")]/following::div[1]//div[@class='col-lg-1 col-md-2 col-sm-2 col-xs-3'][" + i + "]"));
                     List<WebElement> webEleListS = find.findElements(By.xpath(".//*"));
                     ArrayList<String> webEleList = new ArrayList<>();
@@ -93,8 +92,8 @@ public class SelectionPage extends PageBase {
                 } while (driver.findElements(_AvailableDate).isEmpty());
                 click(_AvailableDate);
             }
-            dateString = availableDate.split("\\n")[0] + " 2022";
-            DateFormat OldFormat = new SimpleDateFormat("dd MMM yyyy");
+            dateString =driver.findElement(By.xpath("//input[@class='product_arrival_field form-control']")).getAttribute("value");
+            DateFormat OldFormat = new SimpleDateFormat("yyyy-MM-dd");
             Date _oldFormat = OldFormat.parse(dateString);
             DateFormat _dateString = new SimpleDateFormat("dd-MMM-yyyy");
             dateString = _dateString.format(_oldFormat);
