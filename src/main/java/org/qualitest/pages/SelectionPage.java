@@ -94,6 +94,7 @@ public class SelectionPage extends PageBase {
             }
             dateString =driver.findElement(By.xpath("//input[@class='product_arrival_field form-control']")).getAttribute("value");
             DateFormat OldFormat = new SimpleDateFormat("yyyy-MM-dd");
+            
             Date _oldFormat = OldFormat.parse(dateString);
             DateFormat _dateString = new SimpleDateFormat("dd-MMM-yyyy");
             dateString = _dateString.format(_oldFormat);
